@@ -568,8 +568,7 @@ export function ConnectedPrompt({ roomName, userId }: Props) {
     type === GameState.RevealAnswerLongForm ||
     type === GameState.RevealAnswerToAll;
 
-  const screenHeight = use100vh();
-  const [height] = React.useState(screenHeight);
+  const height = use100vh();
 
   function getPromptContent() {
     switch (type) {
